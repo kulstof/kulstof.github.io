@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <style>
+      .button {
+	background-color: #F6F6F6;
+	border: none;
+	color: #5F904F;
+	padding: 9px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+    position:absolute;
+    left:215px;
+    top:35px;
+	cursor: pointer;
+	border-radius: 5px;
+    font-weight:580;
+} 
+.jd {  
+    position:absolute;
+    left:310px;
+    top:39px;
+    font-size:20px;
+}
+    </style>
+  </head> 
+  <body>
+    <div id="info" onclick="kt()" style="font-size:20px;">start</div>
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+       var a,b,c;
+     function kt()
+      {
+       a=Math.floor(Math.random()*9+1);
+       b=Math.floor(Math.random()*9+1); 
+       document.getElementById("info").innerHTML = "<div style=\"font-size:20px;\">"+a+"+"+b+"=</div>";
+       cl()
+      }
+     function mt()
+      {
+       c=document.getElementById("an").value;      
+      if(c!=a+b)
+       {
+           document.getElementById("aa").innerHTML="<strong style=\"color:#FF0017\">wrong</strong>";          
+       }
+       else
+       {
+           document.getElementById("aa").innerHTML="<strong style=\"color:#17FF32\">correct</strong>";
+       }
+       vv();
+      }
+     function cl()
+      {
+          $("#an").val("");
+          $("strong").text("");
+      }      
+    </script>
+    <br>   
+    <input id="an" type="text" style="height:30px;width:200px;font-size:25px;position:absolute;left:10px;top:35px;border-radius:5px;">
+    <button onclick="mt()" class="button">submit</button>
+    &nbsp
+    <strong id="aa" class="jd"></strong>
+    <button onclick="kt()" class="button" style="position:absolute; left:150px; top:80px;">next</button>   
+    <br><br><br><br>
+    <b>correct: </b><b id="cv">0</b>
+    <b style="margin-left:100px;">wrong: </b><b id="cw">0</b>
+    <script>
+     var x=0,y=0;   
+     function vv()
+     {
+     if(c==a+b)
+     {
+         x++;
+     }
+     else
+     {
+         y++;
+     }          
+     document.getElementById("cv").innerHTML="<b>"+x+"</b>"
+     document.getElementById("cw").innerHTML="<b>"+y+"</b>"
+     }
+    </script>
+  </body>
+</html>
