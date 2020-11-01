@@ -1,23 +1,23 @@
 body
 {
-	background-color:#F7F7F7;
+    background-color:#F7F7F7;
 }
 .b1 {
-    background-color:#24C530;
+    background-color:#2EA44E;
     color:#FFFFFF;
     height:50px;
     width:90px;
     padding-left:16px;
     padding-right:16px;    
     text-align:center;
-	text-decoration:none;
-	display:inline-block;
-	font-size:22px;
+    text-decoration:none;
+    display:inline-block;
+    font-size:22px;
     font-weight:590;
     position:absolute;
     left:291px;
     top:56px;   
-	cursor:pointer;
+    cursor:pointer;
     outline:none;
     border-style:solid;	     
     border-width:1px;
@@ -25,51 +25,51 @@ body
     border-left-width:0px;       
     border-top-left-radius:0px;
     border-bottom-left-radius:0px;
-    border-color:#353535;
+    border-color:#2B9148;
 } 
 .b2 {
-    background-color:#24C530;
+    background-color:#2EA44E;
     border-width:1px;
-	color:#FFFFFF;
+    color:#FFFFFF;
     height:50px;
     width:117px;
     padding-left:16px;
     padding-right:16px;    
-	text-align:center;
-	text-decoration:none;
-	display:inline-block;
-	font-size:22px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:22px;
     font-weight:590;
     position:absolute;  
     left:157px;
     top:139px; 
-	cursor:pointer;
+    cursor:pointer;
     outline:none;
-    border-color:#353535;
+    border-color:#2B9148;
     border-style:solid;
-	border-radius:6px;    
+    border-radius:6px;    
 }
 .b3 {
-    background-color:#24C530;
+    background-color:#2EA44E;
     border-width:1px;
-	color:#FFFFFF;
+    color:#FFFFFF;
     height:50px;
     width:93px;
     padding-left:16px;
     padding-right:16px;    
-	text-align:center;
-	text-decoration:none;
-	display:inline-block;
-	font-size:22px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:22px;
     font-weight:590;
     position:absolute;  
     left:288px;
     top:139px; 
-	cursor:pointer;
+    cursor:pointer;
     outline:none;
-    border-color:#353535;
+    border-color:#2B9148;
     border-style:solid;
-	border-radius:6px;    
+    border-radius:6px;    
 }
 .ip {
     height:46px;
