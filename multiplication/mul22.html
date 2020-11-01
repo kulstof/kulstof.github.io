@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../qc.css"> 
+	<link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <style>
+.st {
+    width:100px;
+    color:#666666;
+    background-color:#F7F7F7;
+    font-size:26px;
+    font-weight:601;
+    margin-top:11px;
+    margin-left:2px;        
+    padding-left:13px;    
+    padding-bottom:6px;
+    border:1px solid #353535;
+    border-bottom-width:0px;
+    border-radius:6px 6px 0px 0px;
+}
+    </style>
+  </head> 
+  <body>
+    <div id="qt" onclick="kt()" class="st">开始</div>
+    <script type="text/javascript" src="../jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      var a,b,c;
+     function kt()
+      {
+       a=Math.floor(Math.random()*90+10);
+       b=Math.floor(Math.random()*90+10); 
+       document.getElementById("qt").innerHTML="<div class=\"qu\">"+a+"×"+b+"=</div>";
+       cl()
+      }
+     function mt()
+      {
+       c=document.getElementById("an").value;      
+       if(c!=a*b)
+        {
+           document.getElementById("aa").innerHTML="<strong class=\"wr\">错误</strong>";          
+        }
+       else
+        {
+           document.getElementById("aa").innerHTML="<strong class=\"co\">正确</strong>";
+        }
+       vv();
+      }
+     function cl()
+      {
+          $("#an").val("");
+          $("strong").text("");
+      }      
+    </script>
+    <br>   
+    <input id="an" type="text" class="ip" placeholder="在此处填写答案">
+    <button onclick="mt()" class="b1">确认</button>
+    <strong id="aa" class="jd"></strong>
+    <button onclick="kt()" class="b2">下一题</button>   
+    <button onclick="ww()" class="b3">提交</button>   
+    <div class="bo">
+    <b class="co">正确: </b>
+    <b id="cv" class="co">0</b>
+    <b class="w1">错误: </b>
+    <b id="cw" class="w2">0</b>
+    </div>
+    <script>
+      var x=0,y=0,z,l;   
+     function vv()
+      {
+       if(c==a*b)
+        {
+            x++;
+        }
+       else
+        {
+            y++;
+        }          
+       document.getElementById("cv").innerHTML="<b>"+x+"</b>"
+       document.getElementById("cw").innerHTML="<b>"+y+"</b>"
+      }
+     function ww()
+      {
+       z=x+y;
+       l=100*x/z;
+       alert(l+"分");
+      }
+    </script>
+  </body>
+</html>
