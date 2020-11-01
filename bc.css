@@ -1,6 +1,6 @@
 body
 {
-	background-color:#F7F7F7;
+    background-color:#F7F7F7;
 }
 .button {
     background-color:#FFFFFF;
@@ -8,7 +8,7 @@ body
     border-radius:15px;
     color: #303030;
     height:100px;
-    width:95%;
+    width:96%;
     padding-top:55px;
     text-align: center;
     text-decoration: none;
